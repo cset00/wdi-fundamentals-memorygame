@@ -14,7 +14,7 @@
 
 	<nav>
 	<a href="#instructions" class="nav">Instructions</a>
-	<a href="#game" class="nav">Game</a>
+	<a href="#game-board" class="nav">Game</a>
 	</nav>
 
 	<main>
@@ -24,12 +24,11 @@
 	<p>Follow us on: 
 	<a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
 
-	<div id="game">
-		<img src="images/back.png" alt="Queen of Diamonds">
-		<img src="images/back.png" alt="Queen of Hearts">
-		<img src="images/back.png" alt="King of Diamonds">
-		<img src="images/back.png" alt="King of Hearts">
-	</div>
+	<div>Score = <span id="score">0</span></div>
+
+	<div id="game-board" class="board clearfix"></div>
+	
+	<button id="resetButton">Reset</button>
 	</main>
 <footer class="clearfix">
 	<p class="copyright">

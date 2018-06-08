@@ -16,6 +16,16 @@ h2 {
 	font-size: 20px;
 }
 
+h4 {
+	font-family: "Raleway";
+	font-weight: 200;
+	letter-spacing: 1px;
+	line-height: 30px;
+	width: 850px;
+	margin: 15px auto;
+
+}
+
 p {
 	font-family: "Droid Serif", Serif;
 	line-height: 26px;
@@ -106,4 +116,18 @@ font-size: 0;
 .name {
 	color: #F15B31;
 	font-weight: 700;
+}
+
+#resetButton {
+	font-family: "Raleway";
+	margin: 50px 0px;
+	background-color: #F15B31;
+	height: 50px; 
+	width: 150px;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+#score {
+	margin-top: 40px;
 }
