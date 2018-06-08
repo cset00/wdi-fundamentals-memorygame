@@ -26,17 +26,17 @@ var cardsInPlay = [];
 var userScore = 0;
 var score = document.getElementById('score');
 
-//Score is not working properly. keeps refreshing. need to figure out.
+
 var addToScore = function () {
-	userScore=+50;
+	userScore+=50;
 	score.innerHTML = userScore;
+	console.log("HELLOOO I ADDED SOME SCORE");
 };
 
 
 var checkForMatch = function () {
 	if (cardsInPlay.length === 2) {
 		if (cardsInPlay[0] === cardsInPlay[1]) {
-		addToScore();
 		alert("You found a match!");
 		console.log(cardsInPlay);
 		addToScore();
@@ -63,7 +63,7 @@ var flipCard = function () {
 	console.log(flippedCard.suit);
 	console.log(flippedCard.cardImage);
 
-	checkForMatch();
+	setTimeout(checkForMatch(),10000);
 	
 };
 
@@ -88,6 +88,7 @@ var resetFunction = function () {
 	cards.sort(function(a, b){return 0.5 - Math.random()});
 	createBoard();
 	userScore = 0;
+	score.innerHTML = userScore;
 };
 
 createBoard();
