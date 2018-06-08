@@ -128,6 +128,7 @@ font-size: 0;
 	color: #FFFFFF;
 }
 
-#score {
-	margin-top: 40px;
+.scoreStyle {
+	margin: 40px 60px -15px 0px;
+	text-align: right;
 }

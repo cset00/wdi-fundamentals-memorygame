@@ -45,7 +45,7 @@ var checkForMatch = function () {
 		alert("Sorry, try again.");
 		console.log(cardsInPlay);
 		
-		//I think this below is causing the second card to not flip?
+		//I think this below is causing the second card to skip the flip?
 		createBoard();
 		};
 
@@ -58,12 +58,13 @@ var flipCard = function () {
 	var flippedCard = cards[cardId];
 	this.setAttribute('src', flippedCard.cardImage);
 	cardsInPlay.push(flippedCard.rank);
+	//alternatively, could create states for open and closed...?
 	this.removeEventListener('click',flipCard);
 	console.log("User flipped " + flippedCard.rank);
 	console.log(flippedCard.suit);
 	console.log(flippedCard.cardImage);
 
-	setTimeout(checkForMatch(),10000);
+	checkForMatch();
 	
 };
 
